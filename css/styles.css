@@ -166,6 +166,28 @@ body {
   margin-right: 50px;
 }
 
+.header-contacts-item::before {
+  display: inline-flex;
+  content: "";
+  margin-right: 10px;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  /* border: 1px solid teal; */
+}
+
+.icon-mail::before {
+  background-image: url(../images/icon-svg/icon-mail-nohover.svg);
+  height: 12px;
+  width: 16px;
+}
+
+.icon-smartphone::before {
+  background-image: url(../images/icon-svg/icon-smartphone-nohover.svg);
+  width: 10px;
+  height: 16px;
+}
+
 /* .header-item:not(:last-child) {
   margin-right: 50px;
 } */
