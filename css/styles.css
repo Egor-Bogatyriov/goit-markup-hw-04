@@ -173,6 +173,7 @@ body {
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
+  align-items: center;
   /* border: 1px solid teal; */
 }
 
@@ -246,6 +247,19 @@ body {
 
 .hero {
   background-color: var(--hero-background-color);
+  height: 600px;
+  max-width: 1600px;
+  margin-right: auto;
+  margin-left: auto;
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/hero-img.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .hero-item {
