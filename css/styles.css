@@ -10,6 +10,7 @@
   --hero-background-color: #2f303a;
   --team-background-color: #f5f4fa;
   --border-line-color: #ececec;
+  --icon-color: #afb1b8;
   --card-set-gap: 30px;
   --card-set-item: 3;
 }
@@ -181,12 +182,14 @@ body {
   background-image: url(../images/icon-svg/icon-mail-nohover.svg);
   height: 12px;
   width: 16px;
+  justify-content: center;
 }
 
 .icon-smartphone::before {
   background-image: url(../images/icon-svg/icon-smartphone-nohover.svg);
   width: 10px;
   height: 16px;
+  justify-content: center;
 }
 
 /* .header-item:not(:last-child) {
@@ -412,12 +415,53 @@ body {
   color: var(--secondaty-title-color);
 }
 
+.social-list {
+  display: flex;
+  justify-content: center;
+}
+
+.social-item + .social-item {
+  margin-left: 10px;
+}
+
 .team-text {
   text-align: center;
   font-weight: normal;
   font-size: 16px;
   line-height: 1.9;
   color: var(--secondaty-text-color);
+  margin-bottom: 16px;
+}
+
+.social-item {
+  width: 44px;
+  height: 44px;
+}
+
+.social-link {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-color: var(--primary-white-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.social-link:hover,
+.social-link:focus {
+  background-color: var(--cursor-text-color);
+}
+
+.social-link:hover .socail-icon,
+.social-link:focus {
+  fill: var(--primary-white-color);
+}
+
+.socail-icon {
+  width: 20px;
+  height: 20px;
+  fill: var(--icon-color);
 }
 
 /* ----------портфолио---------- */
