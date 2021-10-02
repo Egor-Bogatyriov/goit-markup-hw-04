@@ -212,6 +212,11 @@ body {
   display: flex;
 }
 
+.footer-container {
+  margin: 0;
+  padding: 0;
+}
+
 .footer-address {
   margin-top: 20px;
   font-style: normal;
@@ -240,27 +245,6 @@ body {
 .footer-address-link:hover,
 .footer-address-link:focus {
   color: var(--cursor-text-color);
-}
-
-.communication {
-  margin-left: 70px;
-}
-
-.communication-title {
-  position: absolute;
-  width: 145px;
-  height: 16px;
-  left: 516px;
-  top: 2751px;
-  color: var(--primary-title-color);
-
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 14px;
-  line-height: 16px;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
 }
 
 /* главная часть - студия */
@@ -318,8 +302,13 @@ body {
   background-color: #2196f3;
   border: 0;
   padding: 10px 32px;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  /* box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15); */
   border-radius: 4px;
+}
+
+.hero-btn:hover,
+.hero-btn:focus {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
 /* о преимуществах */
@@ -592,6 +581,7 @@ body {
 .current-btn {
   background-color: var(--cursor-text-color);
   color: var(--primary-white-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
 /* .examples-container {
@@ -635,4 +625,10 @@ body {
   border-left: 1px solid #eeeeee;
   border-right: 1px solid #eeeeee;
   border-bottom: 1px solid #eeeeee;
+}
+
+.examples:hover,
+.examples:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
