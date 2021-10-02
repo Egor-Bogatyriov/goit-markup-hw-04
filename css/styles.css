@@ -167,15 +167,18 @@ body {
   margin-right: 50px;
 }
 
-.header-contacts-item::before {
-  display: inline-flex;
-  content: "";
+.header-contacts-mail-icon {
+  width: 16px;
+  height: 12px;
+  fill: currentColor;
   margin-right: 10px;
-  background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat;
-  align-items: center;
-  /* border: 1px solid teal; */
+}
+
+.header-contacts-phone-icon {
+  width: 10px;
+  height: 12px;
+  fill: currentColor;
+  margin-right: 10px;
 }
 
 /* .icon-mail::before {
@@ -206,6 +209,7 @@ body {
   background-color: var(--footer-background-color);
   padding-top: 60px;
   padding-bottom: 60px;
+  display: flex;
 }
 
 .footer-address {
@@ -236,6 +240,27 @@ body {
 .footer-address-link:hover,
 .footer-address-link:focus {
   color: var(--cursor-text-color);
+}
+
+.communication {
+  margin-left: 70px;
+}
+
+.communication-title {
+  position: absolute;
+  width: 145px;
+  height: 16px;
+  left: 516px;
+  top: 2751px;
+  color: var(--primary-title-color);
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
 }
 
 /* главная часть - студия */
@@ -298,6 +323,21 @@ body {
 }
 
 /* о преимуществах */
+
+.benefits-box {
+  width: 270px;
+  height: 120px;
+  background-color: var(--team-background-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.benefits-icon {
+  width: 70px;
+  height: 70px;
+}
 
 .benefits {
   padding-bottom: 47px;
@@ -473,7 +513,9 @@ body {
   margin-left: 30px;
 }
 
-.partner-item {
+/* .partner-item */
+.partner-link {
+  display: flex;
   width: 170px;
   height: 92px;
   border: 1px solid #afb1b8;
@@ -498,14 +540,20 @@ body {
   justify-content: center;
 }
 
+.partner-link {
+  color: var(--icon-color);
+}
+
+.partner-link:hover,
+.partner-link:focus {
+  border: 1px solid var(--cursor-text-color);
+  color: var(--cursor-text-color);
+}
+
 .partner-icon {
   width: 106px;
   height: 60px;
-}
-
-.partner-item:hover,
-.partner-item:focus {
-  border-color: var(--cursor-text-color);
+  fill: currentColor;
 }
 
 /* ----------портфолио---------- */
